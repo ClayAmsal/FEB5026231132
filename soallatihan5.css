@@ -1,0 +1,104 @@
+/* Sidebar */
+#sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #2C629C;
+    color: white;
+    position: fixed;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    padding-top: 20px;
+}
+
+/* Collapsed sidebar */
+#sidebar.active {
+    margin-left: -250px;
+}
+
+/* Sidebar Header (Toggle Button) */
+.sidebar-header {
+    text-align: right;
+    padding: 10px;
+}
+
+.sidebar-header button {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: white;
+}
+
+/* Profile Section */
+.sidebar .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.sidebar .profile img {
+    width: 70px;  /* Reduce image size */
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sidebar .profile-info h5 {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.sidebar .profile-info p {
+    font-size: 12px;
+    margin-top: -5px;
+    color: #ddd;
+}
+
+/* Menu Items */
+.sidebar ul.components {
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar ul.components li {
+    padding: 10px 20px;
+}
+
+.sidebar ul.components li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.sidebar ul.components li a:hover,
+.sidebar ul.components li a.active {
+    background: #1E4A7B;
+    border-radius: 5px;
+}
+
+/* Ensure menu icons and text align properly */
+.sidebar ul.components li a i {
+    font-size: 16px;
+}
+
+/* Logout Button */
+.sidebar .logout {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar .logout a {
+    color: white;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid white;
+    display: inline-block;
+}
