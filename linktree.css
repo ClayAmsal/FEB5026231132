@@ -53,8 +53,8 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 40%;
-  background: linear-gradient(to top, rgba(15, 15, 15, 0.9), rgba(15, 15, 15, 0));
+  height: 37%;
+  background: linear-gradient(to top, rgba(46, 15, 21, 0.9), rgba(46, 15, 21, 0.9));
   border-radius: 0 0 1rem 1rem;
   z-index: 1;
 }
@@ -79,16 +79,16 @@ body {
 .btn-group {
   position: relative;
   overflow: hidden;
-  width: 100%; /* full width stretch */
-  max-width: 190px; /* control how wide it gets */
+  width: 100%; 
+  max-width: 190px; 
   margin: auto;
 }
 
 .tab-indicator {
   position: absolute;
-  top: 4px;  /* spacing inside */
+  top: 4px;
   left: 7px;
-  width: calc(50% - 7px); /* smaller width */
+  width: calc(50% - 7px); 
   height: calc(100% - 8px);
   background-color: #000;
   border-radius: 999px;
@@ -97,7 +97,7 @@ body {
 }
 
 .btn-group.custom-tab-group {
-  background-color: rgba(255, 255, 255, 0.4); /* semi-transparent white */
+  background-color: rgba(255, 255, 255, 0.4); 
   padding: 0.25rem;
   border-radius: 999px;
 }
